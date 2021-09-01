@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="testdesign.css">
+        <link rel="stylesheet" href="css/style-primary.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -17,28 +17,37 @@
     
     <body>
         <div class = "container-fluid">
-        <nav class="navbar navbar-expand-sm">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">
-              <img src="src/logo.png" alt="logo" style="width: 100px;">
-            </a>
-            
-            <!-- Links -->
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="navbar navbar-expand-md sticky-top">
+                <ul class="navbar-nav mr-auto" style="color: white;">
+                    <a class="navbar-brand" href="#">
+                        <img src="src/logo.png" alt="logo" style="width: 140px;"> <!--logo-->
+                    </a>
+                </ul>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white;">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Help</a>
+                    </li>     
+                  </ul>
 
 
-            
-        </div> 
+                </div>  
+              </nav>
+
+
+            </div>
     </body>
 </html>
