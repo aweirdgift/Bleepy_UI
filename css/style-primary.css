@@ -1,6 +1,7 @@
-/* 
+.navbar {
+    background-color: #141e61;
+}
 
-Put css manipulation for the primary theme of bleepy 
-The primary them of bleepy is the color blue one
-
-*/
+.nav-link {
+    text-decoration-color: white;
+}
