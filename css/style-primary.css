@@ -51,9 +51,21 @@ input[type= "text"] {
 .first{
     padding-top: 5%;
     padding-left: 10%;
-
+    
 }
 
+.first-s{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+.second {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    background: rgb(235, 235, 235);
+}
 
 /*Id and single designs*/
 #about {
@@ -90,4 +102,8 @@ input[type= "text"] {
 h1 {
     font-size: 44px;
     font-weight: bold;
+}
+
+header {
+    background: #141e61;
 }
