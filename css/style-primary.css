@@ -40,7 +40,7 @@
 
 /*Search bar design*/
 input[type= "text"] {
-    border-radius: 25px 0 0 25px;
+    border-radius: 25px 25px 25px 25px;
     border: none;
     outline: none;
     padding: 0 25px;
@@ -59,4 +59,16 @@ input[type = "submit"]:hover {
     background: greenyellow;
    
 }
+
+#gamerpic img {
+    width: 600px;
+    height: 500px
+}
+
+.opening{
+    padding-top: 5%;
+    padding-left: 10%;
+
+}
+
 
