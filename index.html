@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style-primary.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -16,51 +17,61 @@
 
     
     <body>
-        <div class = "container-fluid">
-            <nav class="navbar navbar-expand-md sticky-top">
+        <header class="sticky-top">
+            <div class = "container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler navbar-toggler-right mr-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <!--Toggle bar-->
+    
+                    <ul class="navbar-nav mr-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="src/logo.png" alt="logo"> <!--Bleepy logo-->
+                        </a>
+                    </ul>
+                    
+    
+                    <div class="collapse navbar-collapse navbar-custom" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="logIn" href="#">Log in</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign up</a>
+                            </li> 
+                        </ul>
 
-                <ul class="navbar-nav mr-auto" style="color: white;">
-                    <a class="navbar-brand" href="#">
-                        <img src="src/logo.png" alt="logo" style="width: 140px;"> <!--logo-->
-                    </a>
-                </ul>
+                    </div> <!--Collapsible navbar-->
+                    <form class="search"> <!--Search bar-->
+                        <input type="text" name = "" placeholder = "">
+                        <input type="submit" name = "" value = "Search">
+                    </form>
+    
+
+                </nav> <!-- End of navigation bar-->
+            </div> <!-- End of div container fluid-->
+        </header>
+
+
+        <div class = "opening">
+            <div class = "row">
                 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon" style="color: white;"></span>
-            </button> <!--Toggle bar-->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" style="color: white;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" style="color: white;">Product</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" style="color: white;">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Help</a>
-                    </li>   
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Log in</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Sign up</a>
-                    </li> 
-                </ul>
 
-            </div> <!--Collapsible navbar-->
-
-            <form> <!--Search bar-->
-                <input type="text" name = "" placeholder = "">
-                <input type="submit" name = "" value = "Search">
-            </form>
-
-
-              </nav>
             </div>
-    </body>
+
+        </div>
+
+    </body> <!-- End of body-->
 </html>

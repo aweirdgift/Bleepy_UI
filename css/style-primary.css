@@ -1,7 +1,31 @@
+
+/*Navigation bar design*/
+.navbar-toggler{
+    background-color: white;
+  }
+
+
 .navbar {
     background-color: #141e61;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-nav li:hover {
+    background-color: rgb(80, 80, 155);
+   
+
 }
 
 .nav-link {
@@ -9,6 +33,12 @@
 }
 
 
+.nav-item a #logIn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Search bar design*/
 input[type= "text"] {
     border-radius: 25px 0 0 25px;
     border: none;
@@ -27,5 +57,6 @@ input[type = "submit"] {
 
 input[type = "submit"]:hover {
     background: greenyellow;
+   
 }
 
