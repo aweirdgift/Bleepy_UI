@@ -48,7 +48,7 @@ input[type= "text"] {
 
 
 /*Class designs*/
-.opening{
+.first{
     padding-top: 5%;
     padding-left: 10%;
 
@@ -64,7 +64,8 @@ input[type= "text"] {
 }
 
 #gamerpic img {
-    width: 600px;
+    width: 100%;
+    max-width: 550px;
     height: auto;
 }
  
@@ -76,7 +77,13 @@ input[type= "text"] {
 
 #left-open {
     padding-right: 150px;
-  
+    padding-bottom: 10px;
+ 
+}
+
+#left-descript {
+    text-align: justify;
+
 }
 
 /*General Design*/
