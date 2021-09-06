@@ -64,7 +64,7 @@ input[type= "text"] {
     margin-top: 5%;
     margin-bottom: 5%;
     
-    background: rgb(235, 235, 235);
+    background: rgb(239, 243, 255);
 }
 
 /*Id and single designs*/
@@ -107,3 +107,31 @@ h1 {
 header {
     background: #141e61;
 }
+
+.row {
+   margin-left: 8%;
+   margin-right: 10%;
+   
+}
+
+.card {
+    width:300px;
+}
+
+.card-body {
+    justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
