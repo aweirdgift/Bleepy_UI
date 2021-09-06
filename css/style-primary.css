@@ -111,15 +111,16 @@ header {
 .row {
    margin-left: 8%;
    margin-right: 10%;
-   
+
 }
 
 .card {
     width:300px;
 }
 
-.card-body {
-    justify-content: center;
+.third-s {
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
 
 .card-img-top {
@@ -131,7 +132,4 @@ h2 {
     text-align: center;
 }
 
-h4 {
-    text-align: center;
-}
 
