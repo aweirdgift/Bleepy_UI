@@ -45,31 +45,32 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Help</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="logIn" href="#">Log in</a>
-                            </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign up</a>
-                            </li> 
                         </ul>
 
                     </div> <!--Collapsible navbar-->
-                    <form class="search"> <!--Search bar-->
-                        <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
-                        <input type="text" name = "Search" placeholder = "Search">
-                    </form>
-    
 
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" id="logIn" href="#" id = "login">Log in</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html" id="signup">Sign up</a>
+                        </li> 
+                    </ul>
                 </nav> <!-- End of navigation bar-->
-            </header>
-            
+            </header> <!--End of Header-->
+
             <div class="first">
             <div class="row">
                 <div class="col-md-6" id="left-open">
                     <p id = "about"> ABOUT US</p>
                     <h1>We want to have a safe video for everyone!</h1> <br>
-                    <p id = "left-descript"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-                    <br> <br>
+                    <p id = "left-descript"> Bleepy is a Tagalog and English profanity blocker that will help the Gaming Video Creators also known as Game Streamers. This will help them to
+                        remove the profanities in their recorded videos playing a game with the use of machine learning and algorithm. Our mission is to support the local streamers here in the Philippines 
+                        to have a better content in their channels and eliminate the profanities that restrict by community guidelines provided by the Social Media platforms in which game streamers
+                        upload their videos. Want to know more?
+                    </p>
+                    <br>
                     <button type="button" class="btn btn-outline-primary" id = "getstarted"> Get Started >> </button>
                 </div>
                 <!--End of first row-->
@@ -83,10 +84,11 @@
             
 
 
+
             <div class = "second"> <br>
-                <h2>What our system can do?</h2>
-                <p style="text-align: center;">Here are the basic services we provide!</p>
-                <div class="first-s">
+                <h2>The Best Profanity Blocker you can have!</h2>
+                <p style="text-align: center;">We provide three best experiences that you can have in blocking the profanities in the videos.</p>
+                <div class="second-s">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card">
@@ -121,17 +123,17 @@
                         </div> <!--End of Row-->
                       </div> <!--End of first-s-->
                 </div><!--End of second-->
-
+                
 
                 <div class = "third">
                     <h2>Remove profanities in your videos!</h2>
-                    <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> <br>
+                    <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> <br> <br>
                    <div class ="third-s">
                     <div class = "row">
                         <div class="col-md-4">
                             <h4>Step 1</h4>
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" id="third"> 
                                     <i class="fa fa-upload" aria-hidden="true"></i> <br>
                                     <p>Upload the video you want to remove the profanity</p>
                                 </div>
@@ -141,7 +143,7 @@
                         <div class="col-md-4">
                             <h4>Step 2</h4>
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" id="third">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                     <p>Wait until your video done processing</p>
                                 </div>
@@ -151,20 +153,43 @@
                         <div class="col-md-4">
                             <h4>Step 3</h4>
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" id="third">
                                     <i class="fa fa-download" aria-hidden="true"></i>
                                     <p>Download your videos</p>
                                 </div>
                               </div>
+                            </div>
                         </div>
                     </div>
-
-                   </div>
-
-
                     </div>
 
-            
+            <!--Footer-->  
+            <div class= "footer-bleep">
+                <footer>
+                    <!--Grid System-->
+                    <div class="row" id="row3">
+                        <div class="col-md-4">
+                            <h1 class= "footer-h1">Contact</h1>
+                            <i class="fa fa-map-marker" aria-hidden="true" > Calamba City, Laguna</i> <br>
+                            <i class="fa fa-envelope-o" aria-hidden="true"> <a> Gmail: bleepy@gmail.com</a></i> <br>
+                            <i class="fa fa-phone" aria-hidden="true"> 049-897-8254</i>
+                        </div>
+                        <div class="col-md-4">
+                            <h1 class= "footer-h1">Follow Us</h1>
+                            <i class="fa fa-facebook-square" aria-hidden="true"> Bleepy.facebook.com</i> <br>
+                            <i class="fa fa-twitter-square" aria-hidden="true"> Bleepymo</i> <br>
+                            <i class="fa fa-instagram" aria-hidden="true"> BleepyUs</i>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h1 class= "footer-h1">About Us</h1>
+                            <a href="">Terms and Conditions</a>
+                        </div>
+                    </div>
+            </footer>
+            </div><!--End of Footer-bleep-->
+
+          
 
             </div> <!-- End of div container fluid-->
     </body> <!-- End of body-->

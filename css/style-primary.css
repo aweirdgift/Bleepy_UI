@@ -32,12 +32,6 @@
     padding: 0 0 0px 10;
 }
 
-
-.nav-item a #logIn{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 /*Search bar design*/
 input[type= "text"] {
     border-radius: 25px 25px 25px 25px;
@@ -49,23 +43,49 @@ input[type= "text"] {
 
 /*Class designs*/
 .first{
-    padding-top: 5%;
-    padding-left: 10%;
-    
-}
-
-.first-s{
-    padding-top: 2%;
-    padding-left: 10%;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-left: 7%;   
 }
 
 .second {
     margin-top: 5%;
     margin-bottom: 5%;
-    
-    background: rgb(239, 243, 255);
+    background: rgba(242, 242, 242, 1);
+   
 }
+
+.second-s{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    column-gap: 100px;
+}
+
+.card {
+    width:300px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px;
+}
+
+.row {
+    margin-left: 8%;
+    margin-right: 10%;
+ 
+ }
+
+ .third-s {
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+
 
 /*Id and single designs*/
 #about {
@@ -88,14 +108,16 @@ input[type= "text"] {
 
 
 #left-open {
-    padding-right: 150px;
+    padding-right: 100px;
     padding-bottom: 10px;
- 
 }
 
 #left-descript {
     text-align: justify;
+}
 
+#third {
+    background-color: rgb(255, 255, 255);
 }
 
 /*General Design*/
@@ -104,32 +126,39 @@ h1 {
     font-weight: bold;
 }
 
-header {
-    background: #141e61;
-}
-
-.row {
-   margin-left: 8%;
-   margin-right: 10%;
-
-}
-
-.card {
-    width:300px;
-}
-
-.third-s {
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-.card-img-top {
-    width: 100%;
-    height: 280px;
-}
-
 h2 {
     text-align: center;
 }
 
 
+header {
+    background: #141e61;
+}
+
+
+
+/*Card*/
+
+
+/*footer*/
+footer {
+    background-color: #141e61; 
+    color: aliceblue;
+
+ 
+}
+
+.footer-bleep {
+    justify-content: center;
+    background-color: #141e61;  
+    padding: 2%;
+}
+
+#row3 {
+    padding-left: 150px;
+}
+
+
+#signup {
+    background-color: rgba(60, 100, 177, 1);
+}
