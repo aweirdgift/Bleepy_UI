@@ -7,9 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style-primary.css">
-        <link rel="stylesheet" href="../css/signup.css">
+      
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "../jquery.validate.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
@@ -66,16 +67,72 @@
                     
                         <div id ="signupborder">
                             <h4>Sign Up on Bleepy</h4> <br>
-                            <form action="/action_page.php">
-                              
-                                <input type="text" class = "input-box" id="fname" name="fname" placeholder="First Name"><br> <br>
-                                <input type="text" class = "input-box" id="lname" name="lname" placeholder="Last Name"><br><br>
-                                <input type="text" class = "input-box" id="lname" name="username" placeholder="Username"><br><br>
-                                <input type="text" class = "input-box" id="lname" name="password" placeholder="Password"><br><br>
-                                <input type="text" class = "input-box" id="lname" name="confirm-password" placeholder="Confirm Password"><br><br>
-                                <button type ="button" class="signup-button" > SUBMIT </button>
+                            <form id = "signupform">
+                                <div class = "form-control">
+                                    <label for="fname"> First Name </label>
+                                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                                    <small>Error Message</small>
+                                </div>
+
+                                <div class = "form-control">
+                                    <label for="fname"> Last Name </label>
+                                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                                    <small>Error Message</small>
+                                </div>
+
+
+                                <div class = "form-control">
+                                    <label for="fname"> Username </label>
+                                    <input type="text" id="username" name="username" placeholder="Username">
+                                    <small>Error Message</small>
+                                </div>
+
+                                <div class = "form-control">
+                                    <label for="fname"> Password </label>
+                                    <input type="text" id="password" name="password" placeholder="Password">
+                                    <small>Error Message</small>
+                                </div>
+
+                                <div class = "form-control">
+                                    <label for="fname"> Confirm Password </label>
+                                    <input type="text" class = "input-box"  name="confirmpassword" >
+                                    <small>Error Message</small>
+                                </div>
+
+                                <button type ="submit" class="signup-button" > SUBMIT </button>
                                 <p>Already have an account? <a href=""> Log In </a></p>
                               </form>
+                        
+
+                        <script>
+                            $("#signupform").validate({
+                            errorElement : 'p',
+                            errorClass : 'invalid',
+                            rules: {
+                                fname: {
+                                required: true,
+                                minlength: 5
+                                },
+                                lname: {
+                                required: true,
+                                minlength: 5
+                                },
+                                username: {
+                                required: true,
+                                minlength: 3
+                                },
+                                password: {
+                                required: true,
+                                minlength: 8,
+                                },
+                                confirmpassword: {
+                                required: true,
+                                minlength: 8,
+                                equalTo: "#password",
+                                },
+                            },
+                            });
+                        </script>
 
                      
                     </div>

@@ -1,25 +1,23 @@
 
 
 #signupborder {
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
-    
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3); 
     background: #fff;
     padding: 20px;
     width: 400px;
     margin: 8% auto 8%;
     text-align: center;
-    border-style: ;
     border-color: black;
 }
 
-.input-box {
+/*.input-box {
     border-radius: 20px;
     padding: 10px;
     margin: 5px 0;
     width: 300px;
     border: 1px solid rgba(60, 100, 177, 1);
     outline: none;
-}
+}*/
 
 button {
     color: black;
@@ -32,10 +30,10 @@ button {
     cursor: pointer;
 }
 
-.close {
-    justify-content: center;
-}
-
 .signup-button {
     background-color: rgb(144, 255, 159);
+}
+
+span {
+    justify-content: center;
 }
