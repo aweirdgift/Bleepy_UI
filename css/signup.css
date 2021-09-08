@@ -23,7 +23,6 @@
 
 button {
     color: black;
-    width: 100px;
     padding: 10px;
     border-radius: 20px;
     font-size: 15px;
@@ -33,6 +32,10 @@ button {
     cursor: pointer;
 }
 
+.close {
+    justify-content: center;
+}
+
 .signup-button {
-    background-color: rgb(159, 183, 228);
+    background-color: rgb(144, 255, 159);
 }
