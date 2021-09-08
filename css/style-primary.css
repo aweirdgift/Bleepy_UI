@@ -32,14 +32,6 @@
     padding: 0 0 0px 10;
 }
 
-/*Search bar design*/
-input[type= "text"] {
-    border-radius: 25px 25px 25px 25px;
-    border: none;
-    outline: none;
-    padding: 0 25px;
-}
-
 
 /*Class designs*/
 .first{
