@@ -1,171 +1,99 @@
-<!-- Create Account | Register Page -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>index</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style-primary.css">
-      
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src = "../jquery.validate.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleepy</title>
 
-    <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-primary.css">
 
-        <div class = "container-fluid">
-            <header class="sticky-top">
-                <div class = "container-fluid">
-                    <nav class="navbar navbar-expand-lg">
-                        <button class="navbar-toggler navbar-toggler-right mr-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> <!--Toggle bar-->
-        
-                        <ul class="navbar-nav mr-auto">
-                            <a class="navbar-brand" href="#">
-                                <img src="src/logo.png" alt="logo"> <!--Bleepy logo-->
-                            </a>
-                        </ul>
-                        
-        
-                        <div class="collapse navbar-collapse navbar-custom" id="collapsibleNavbar">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="#">Product</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Help</a>
-                                </li>
-                            </ul>
     
-                        </div> <!--Collapsible navbar-->
+</head>
+<body>
     
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" id="logIn" href="#" id = "login">Log in</a>
-                            </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="signup.html" id="signup">Sign up</a>
-                            </li> 
-                        </ul>
-                    </nav> <!-- End of navigation bar-->
-                </header> <!--End of Header-->
-
-
-
-                <div class = "container">
-                    
-                        <div id ="signupborder">
-                            <h4>Sign Up on Bleepy</h4> <br>
-                            <form id = "signupform">
-                                <div class = "form-control">
-                                    <label for="fname"> First Name </label>
-                                    <input type="text" id="fname" name="fname" placeholder="First Name">
-                                    <small>Error Message</small>
-                                </div>
-
-                                <div class = "form-control">
-                                    <label for="fname"> Last Name </label>
-                                    <input type="text" id="lname" name="lname" placeholder="Last Name">
-                                    <small>Error Message</small>
-                                </div>
-
-
-                                <div class = "form-control">
-                                    <label for="fname"> Username </label>
-                                    <input type="text" id="username" name="username" placeholder="Username">
-                                    <small>Error Message</small>
-                                </div>
-
-                                <div class = "form-control">
-                                    <label for="fname"> Password </label>
-                                    <input type="text" id="password" name="password" placeholder="Password">
-                                    <small>Error Message</small>
-                                </div>
-
-                                <div class = "form-control">
-                                    <label for="fname"> Confirm Password </label>
-                                    <input type="text" class = "input-box"  name="confirmpassword" >
-                                    <small>Error Message</small>
-                                </div>
-
-                                <button type ="submit" class="signup-button" > SUBMIT </button>
-                                <p>Already have an account? <a href=""> Log In </a></p>
-                              </form>
-                        
-
-                        <script>
-                            $("#signupform").validate({
-                            errorElement : 'p',
-                            errorClass : 'invalid',
-                            rules: {
-                                fname: {
-                                required: true,
-                                minlength: 5
-                                },
-                                lname: {
-                                required: true,
-                                minlength: 5
-                                },
-                                username: {
-                                required: true,
-                                minlength: 3
-                                },
-                                password: {
-                                required: true,
-                                minlength: 8,
-                                },
-                                confirmpassword: {
-                                required: true,
-                                minlength: 8,
-                                equalTo: "#password",
-                                },
-                            },
-                            });
-                        </script>
-
-                     
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <div class=" container-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"> <img src="../src/logo-white.png" alt="" class="" width="140px"></a>
+        
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sign up</a>
+                </li>
+                <li class="nav-item">
+                <a class="btn btn-outline-light bg-secondary d-md-block d-none" href="#">Sign in</a>
+                <a class="nav-link d-md-none" href="#">Sign in</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="" data-toggle="dropdown">
+                        <i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Help</a>
+                      <a class="dropdown-item" href="#">Settings</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Log out</a>
                     </div>
-                </div> <!--End of container-->
-    
-    
-                    <!--Footer-->  
-                    <div class= "footer-bleep">
-                        <footer>
-                            <!--Grid System-->
-                            <div class="row" id="row3">
-                                <div class="col-md-4">
-                                    <h1 class= "footer-h1">Contact</h1>
-                                    <i class="fa fa-map-marker" aria-hidden="true" > Calamba City, Laguna</i> <br>
-                                    <i class="fa fa-envelope-o" aria-hidden="true"> <a> Gmail: bleepy@gmail.com</a></i> <br>
-                                    <i class="fa fa-phone" aria-hidden="true"> 049-897-8254</i>
-                                </div>
-                                <div class="col-md-4">
-                                    <h1 class= "footer-h1">Follow Us</h1>
-                                    <i class="fa fa-facebook-square" aria-hidden="true"> Bleepy.facebook.com</i> <br>
-                                    <i class="fa fa-twitter-square" aria-hidden="true"> Bleepymo</i> <br>
-                                    <i class="fa fa-instagram" aria-hidden="true"> BleepyUs</i>
-                                </div>
-        
-                                <div class="col-md-4">
-                                    <h1 class= "footer-h1">About Us</h1>
-                                    <a href="">Terms and Conditions</a>
-                                </div>
-                            </div>
-                    </footer>
-                    </div><!--End of Footer-bleep-->
-
+                </li>
+            </ul>
+            </div>
         </div>
-        
-    </body>
+    </nav>
+
+    <section style="min-height: 500px;">
+
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row container">
+                <div class="col-md-4 mt-5">
+                    <h1>Contact</h1>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Calamba City, Laguna <br>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:bleepy@gmail.com" class="text-white">Gmail: bleepy@gmail.com</a><br>
+                    <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+639487171889" class="text-white">0948-717-1889</a>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <h1>Follow Us</h1>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i> <a href="" class="text-white">Bleepy.facebook.com</a><br>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="" class="text-white">Bleepymo</a><br>
+                    <i class="fa fa-instagram" aria-hidden="true"></i> <a href="" class="text-white">BleepyUs</a>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <h1>About Us</h1>
+                    <a href="" class="text-white">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
