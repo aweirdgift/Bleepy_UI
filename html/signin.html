@@ -71,7 +71,7 @@
             <div class="col-md-4">
                 <div class="jumbotron bg-white shadow p-4 mb-4">
                     <h1 class="text-center my-3">Sign in</h1>
-                    <form action="">
+                    <form action="" id="signinform" method="POST">
                         <div class="form-group">
                             <label for="email">Email address: <span class="invalid text-danger">*</span></label>
                             <input type="email" class="form-control" placeholder="Enter your email" id="email" name="email">
@@ -81,7 +81,7 @@
                             <div class="input-group mb-3 ">
                                 <input type="password" class="form-control " placeholder="Enter your password" id="pwd" name="pwd">
                                 <div class="input-group-append">
-                                    <button class="btn btn-secondary" type="button"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+                                    <button class="btn btn-secondary" type="button" id="showpwd"><i class="fa fa-eye-slash" aria-hidden="true" id="eyepwd"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -130,5 +130,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery.validate.js"></script>
+
+    <script src="../js/showpwd.js"></script>
+    <script src="../js/signin.js"></script>
 </body>
 </html>
