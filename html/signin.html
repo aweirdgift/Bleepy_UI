@@ -73,15 +73,29 @@
                     <h1 class="text-center my-3">Sign in</h1>
                     <form action="">
                         <div class="form-group">
-                          <label for="email">Email address: <span class="invalid text-danger">*</span></label>
-                          <input type="email" class="form-control rounded-pill" placeholder="Enter email" id="email" name="email">
+                            <label for="email">Email address: <span class="invalid text-danger">*</span></label>
+                            <input type="email" class="form-control" placeholder="Enter your email" id="email" name="email">
                         </div>
                         <div class="form-group">
-                          <label for="pwd">Password: <button class="btn rounded-circle" type="button"><i class="fa fa-eye-slash" aria-hidden="true"></i></button> <span class="invalid text-danger">*</span></label> 
-                          <input type="password" class="form-control rounded-pill" placeholder="Enter password" id="pwd" name="pwd">
+                            <label for="pwd">Password: <span class="invalid text-danger">*</span></label> 
+                            <div class="input-group mb-3 ">
+                                <input type="password" class="form-control " placeholder="Enter your password" id="pwd" name="pwd">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center mb-5">
-                            <button type="submit" class="btn btn-secondary rounded-pill">Submit</button>
+                        
+                        <div class="text-center mb-3">
+                            <button type="submit" class="btn btn-secondary w-100 ">Submit</button>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <a href="signup.html">Create an account </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="">Forgot Password </a>
+                            </div>
                         </div>
                     </form>
                 </div>
