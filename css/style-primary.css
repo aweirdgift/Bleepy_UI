@@ -6,6 +6,7 @@
 
     --text-color-primary:rgba(0, 0, 0, 1) ;
     --text-color-secondary:rgba(255, 255, 255, 1) ;
+    --text-color-tertiary:var(--secondary-color);
 }
 
 html[data-theme='primary'] {
@@ -14,6 +15,7 @@ html[data-theme='primary'] {
     --tertiary-color:rgba(55, 63, 65, 1);
     --quaternary-color:rgba(60, 100, 177, 1);
 
+    --text-color-tertiary:var(--secondary-color);
 }
 
 html[data-theme='red'] {
@@ -22,14 +24,16 @@ html[data-theme='red'] {
     --tertiary-color:rgba(55, 63, 65, 1);
     --quaternary-color:rgba(206, 57, 61, 1);
 
+    --text-color-tertiary:var(--secondary-color);
 }
 
 html[data-theme='orange'] {
     --primary-color: rgba(255, 255, 255, 1) ;
-    --secondary-color: rgba(240, 178, 101, 1) ;
+    --secondary-color: rgba(220, 158, 82, 1);
     --tertiary-color:rgba(0, 0, 0, 1) ;
     --quaternary-color:rgba(248, 200, 141, 1) ;
 
+    --text-color-tertiary:var(--secondary-color);
 }
 
 html[data-theme='dark'] {
@@ -37,6 +41,8 @@ html[data-theme='dark'] {
     --secondary-color: rgba(0, 0, 0, 1) ;
     --tertiary-color:rgba(0, 0, 0, 1) ;
     --quaternary-color:rgba(65, 61, 57, 1);
+
+    --text-color-tertiary:var(--secondary-color);
 }
 
 
@@ -53,6 +59,21 @@ html[data-theme='dark'] {
 
 .text-theme-secondary {
     color: var(--text-color-secondary);
+}
+
+.text-theme-tertiary {
+    color: var(--text-color-tertiary);
+}
+
+.btn-theme {
+    color: var(--text-color-secondary);
+    background-color: var(--secondary-color);
+    border-color: var(--quaternary-color); /*set the color you want here*/
+}
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
+    color: var(--text-color-secondary);
+    background-color: var(--quaternary-color);
+    border-color: var(--quaternary-color); /*set the color you want here*/
 }
 
 .navbar-theme .navbar-brand {
