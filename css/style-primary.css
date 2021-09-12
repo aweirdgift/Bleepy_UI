@@ -1,0 +1,69 @@
+:root {
+    --primary-color: rgba(255, 255, 255, 1) ;
+    --secondary-color: rgba(20, 30, 97, 1) ;
+    --tertiary-color:rgba(55, 63, 65, 1) ;
+    --quaternary-color:rgba(60, 100, 177, 1) ;
+
+    --text-color-primary:rgba(0, 0, 0, 1) ;
+    --text-color-secondary:rgba(255, 255, 255, 1) ;
+}
+
+html[data-theme='primary'] {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(20, 30, 97, 1);
+    --tertiary-color:rgba(55, 63, 65, 1);
+    --quaternary-color:rgba(60, 100, 177, 1);
+
+}
+
+html[data-theme='red'] {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(130, 30, 33, 1);
+    --tertiary-color:rgba(55, 63, 65, 1);
+    --quaternary-color:rgba(206, 57, 61, 1);
+
+}
+
+html[data-theme='orange'] {
+    --primary-color: rgba(255, 255, 255, 1) ;
+    --secondary-color: rgba(240, 178, 101, 1) ;
+    --tertiary-color:rgba(0, 0, 0, 1) ;
+    --quaternary-color:rgba(248, 200, 141, 1) ;
+
+}
+
+html[data-theme='dark'] {
+    --primary-color: rgba(255, 255, 255, 1) ;
+    --secondary-color: rgba(0, 0, 0, 1) ;
+    --tertiary-color:rgba(0, 0, 0, 1) ;
+    --quaternary-color:rgba(65, 61, 57, 1);
+}
+
+
+.bg-theme {
+    background-color: var(--secondary-color);
+}
+.bg-theme-secondary {
+    background-color: var(--quaternary-color);
+}
+
+.text-theme {
+    color: var(--text-color-primary);
+}
+
+.text-theme-secondary {
+    color: var(--text-color-secondary);
+}
+
+.navbar-theme .navbar-brand {
+    color: var(--text-color-secondary);
+}
+
+.navbar-theme .navbar-toggler {
+    color: var(--text-color-secondary);
+    border-color: var(--text-color-secondary);
+}
+
+.navbar-theme .navbar-nav .nav-link {
+    color: var(--text-color-secondary);
+}
