@@ -66,46 +66,86 @@
     </nav>
 
     <section style="min-height: 500px;">
-
-        <div class="row justify-content-center py-5">
-            <div class="col-md-4">
-                <div class="jumbotron bg-white shadow p-4 mb-4">
-                    <h1 class="text-center my-3">Sign in</h1>
-                    <form action="" id="signinform" method="POST">
-                        <div class="form-group">
-                            <label for="email">Email address: <span class="invalid text-danger">*</span></label>
-                            <input type="email" class="form-control" placeholder="Enter your email" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Password: <span class="invalid text-danger">*</span></label> 
-                            <div class="input-group mb-3 ">
-                                <input type="password" class="form-control " placeholder="Enter your password" id="pwd" name="pwd">
-                                <div class="input-group-append">
-                                    <button class="btn btn-theme" type="button" id="showpwd"><i class="fa fa-eye-slash" aria-hidden="true" id="eyepwd"></i></button>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="jumbotron bg-white shadow p-4 mb-4">
+                        <h1>Settings</h1>
+                        <hr>
+                        <div class="my-5"> 
+                            <h3>Change Theme</h3>
+                            <div class=" bg-white border border-secondary">
+                                <div class="row my-2">
+                                    <div class="col-3">
+                                        <p class="text-right">Primary</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex border border-dark h-100">
+                                            <div class="p-2 primary-1 flex-fill"></div>
+                                            <div class="p-2 primary-2 flex-fill"></div>
+                                            <div class="p-2 primary-3 flex-fill"></div>
+                                            <div class="p-2 primary-4 flex-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-theme apply-theme" value="primary">Apply</button>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-3">
+                                        <p class="text-right">Red</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex border border-dark h-100">
+                                            <div class="p-2 red-1 flex-fill"></div>
+                                            <div class="p-2 red-2 flex-fill"></div>
+                                            <div class="p-2 red-3 flex-fill"></div>
+                                            <div class="p-2 red-4 flex-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-theme apply-theme" value="red">Apply</button>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-3">
+                                        <p class="text-right">Orange</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex border border-dark h-100">
+                                            <div class="p-2 orange-1 flex-fill"></div>
+                                            <div class="p-2 orange-2 flex-fill"></div>
+                                            <div class="p-2 orange-3 flex-fill"></div>
+                                            <div class="p-2 orange-4 flex-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-theme apply-theme" value="orange">Apply</button>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-3">
+                                        <p class="text-right">Dark</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex border border-dark h-100">
+                                            <div class="p-2 dark-1 flex-fill"></div>
+                                            <div class="p-2 dark-2 flex-fill"></div>
+                                            <div class="p-2 dark-3 flex-fill"></div>
+                                            <div class="p-2 dark-4 flex-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-theme apply-theme" value="dark">Apply</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" id="remember" name="remember"> Remember me for 30 days
-                            </label>
-                        </div>
-                        <div class="text-center mb-3">
-                            <button type="submit" class="btn btn-theme w-100">Submit</button>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-6">
-                                <a href="signup.html">Create an account </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="">Forgot Password </a>
-                            </div>
-                        </div>
-                    </form>
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <footer class="bg-theme text-theme-secondary">
@@ -136,9 +176,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/themes.js"></script>
 
-    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/changethemes.js"></script>
 
-    <script src="../js/showpwd.js"></script>
-    <script src="../js/signin.js"></script>
 </body>
 </html>
