@@ -1,68 +1,150 @@
 :root {
-    --primary-color: rgba(255, 255, 255, 1) ;
-    --secondary-color: rgba(20, 30, 97, 1) ;
-    --tertiary-color:rgba(55, 63, 65, 1) ;
-    --quaternary-color:rgba(60, 100, 177, 1) ;
+    /* Primary Theme*/
+    --theme-primary-1: rgba(20, 30, 97, 1);
+    --theme-primary-2: rgba(60, 100, 177, 1);
+    --theme-primary-3: rgba(0, 0, 0, 1);
+    --theme-primary-4: rgba(255, 255, 255, 1);
+
+    /* Red Theme*/
+    --theme-red-1: rgba(130, 30, 33, 1);
+    --theme-red-2: rgba(206, 57, 61, 1);
+    --theme-red-3: rgba(0, 0, 0, 1);
+    --theme-red-4: rgba(255, 255, 255, 1);
+    
+
+    /* Orange Theme*/
+    --theme-orange-1: rgba(220, 158, 82, 1);
+    --theme-orange-2: rgba(248, 200, 141, 1) ;
+    --theme-orange-3: rgba(0, 0, 0, 1);
+    --theme-orange-4: rgba(255, 255, 255, 1);
+
+    /* Dark Theme*/
+    --theme-dark-1: rgba(0, 0, 0, 1);
+    --theme-dark-2: rgba(65, 61, 57, 1) ;
+    --theme-dark-3: rgba(242, 242, 242, 1);
+    --theme-dark-4: rgba(255, 255, 255, 1);
+
+    
+
+    --primary-color: var(--theme-primary-1);
+    --secondary-color: var(--theme-primary-2);
+    --tertiary-color:var(--theme-primary-3) ;
+    --quaternary-color:var(--theme-primary-4);
 
     --text-color-primary:rgba(0, 0, 0, 1) ;
     --text-color-secondary:rgba(255, 255, 255, 1) ;
-    --text-color-tertiary:var(--secondary-color);
+    --text-color-tertiary:var(--primary-color);
 }
 
 html[data-theme='primary'] {
-    --primary-color: rgba(255, 255, 255, 1);
-    --secondary-color: rgba(20, 30, 97, 1);
-    --tertiary-color:rgba(55, 63, 65, 1);
-    --quaternary-color:rgba(60, 100, 177, 1);
+    --primary-color: var(--theme-primary-1);
+    --secondary-color: var(--theme-primary-2);
+    --tertiary-color:var(--theme-primary-3) ;
+    --quaternary-color:var(--theme-primary-4);
 
-    --text-color-tertiary:var(--secondary-color);
+    --text-color-tertiary:var(--primary-color);
 }
 
 html[data-theme='red'] {
-    --primary-color: rgba(255, 255, 255, 1);
-    --secondary-color: rgba(130, 30, 33, 1);
-    --tertiary-color:rgba(55, 63, 65, 1);
-    --quaternary-color:rgba(206, 57, 61, 1);
+    --primary-color: var(--theme-red-1);
+    --secondary-color: var(--theme-red-2);
+    --tertiary-color:var(--theme-red-3) ;
+    --quaternary-color:var(--theme-red-4);
 
-    --text-color-tertiary:var(--secondary-color);
+    --text-color-tertiary:var(--primary-color);
 }
 
 html[data-theme='orange'] {
-    --primary-color: rgba(255, 255, 255, 1) ;
-    --secondary-color: rgba(220, 158, 82, 1);
-    --tertiary-color:rgba(55, 63, 65, 1) ;
-    --quaternary-color:rgba(248, 200, 141, 1) ;
+    --primary-color: var(--theme-orange-1);
+    --secondary-color: var(--theme-orange-2);
+    --tertiary-color:var(--theme-orange-3) ;
+    --quaternary-color:var(--theme-orange-4);
 
-    --text-color-tertiary:var(--secondary-color);
+    --text-color-tertiary:var(--primary-color);
 }
 
 html[data-theme='dark'] {
-    --primary-color: rgba(255, 255, 255, 1) ;
-    --secondary-color: rgba(0, 0, 0, 1) ;
-    --tertiary-color:rgba(55, 63, 65, 1) ;
-    --quaternary-color:rgba(65, 61, 57, 1);
+    --primary-color: var(--theme-dark-1);
+    --secondary-color: var(--theme-dark-2);
+    --tertiary-color:var(--theme-dark-3) ;
+    --quaternary-color:var(--theme-dark-4);
 
-    --text-color-tertiary:var(--secondary-color);
+    --text-color-tertiary:var(--primary-color);
+}
+
+/**
+Theme Colors
+**/
+.primary-1 {
+    background-color: var(--theme-primary-1);
+}
+.primary-2 {
+    background-color: var(--theme-primary-2);
+}
+.primary-3 {
+    background-color: var(--theme-primary-3);
+}
+.primary-4 {
+    background-color: var(--theme-primary-4);
+}
+
+.red-1 {
+    background-color: var(--theme-red-1);
+}
+.red-2 {
+    background-color: var(--theme-red-2);
+}
+.red-3 {
+    background-color: var(--theme-red-3);
+}
+.red-4 {
+    background-color: var(--theme-red-4);
+}
+
+.orange-1 {
+    background-color: var(--theme-orange-1);
+}
+.orange-2 {
+    background-color: var(--theme-orange-2);
+}
+.orange-3 {
+    background-color: var(--theme-orange-3);
+}
+.orange-4 {
+    background-color: var(--theme-orange-4);
+}
+
+.dark-1 {
+    background-color: var(--theme-dark-1);
+}
+.dark-2 {
+    background-color: var(--theme-dark-2);
+}
+.dark-3 {
+    background-color: var(--theme-dark-3);
+}
+.dark-4 {
+    background-color: var(--theme-dark-4);
 }
 
 /** 
-
+    Implementations
 **/
 body {
-    background-color: var(--primary-color);
+    background-color: var(--quarternary-color);
     color: var(--text-color-primary);
 }
 
 .dropdown-menu .dropdown-item:hover{
-    background-color: var(--quaternary-color);
+    background-color: var(--secondary-color);
     color: var(--text-color-secondary);
 }
 
 .bg-theme {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .bg-theme-secondary {
-    background-color: var(--quaternary-color);
+    background-color: var(--secondary-color);
 }
 .bg-theme-tertiary {
     background-color: var(--tertiary-color);
@@ -82,13 +164,13 @@ body {
 
 .btn-theme {
     color: var(--text-color-secondary);
-    background-color: var(--secondary-color);
-    border-color: var(--quaternary-color); /*set the color you want here*/
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color); /*set the color you want here*/
 }
 .btn-theme:hover, .btn-theme:focus, .btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
     color: var(--text-color-secondary);
-    background-color: var(--quaternary-color);
-    border-color: var(--quaternary-color); /*set the color you want here*/
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color); /*set the color you want here*/
 }
 
 .navbar-theme .navbar-brand {
