@@ -30,7 +30,7 @@ html[data-theme='red'] {
 html[data-theme='orange'] {
     --primary-color: rgba(255, 255, 255, 1) ;
     --secondary-color: rgba(220, 158, 82, 1);
-    --tertiary-color:rgba(0, 0, 0, 1) ;
+    --tertiary-color:rgba(55, 63, 65, 1) ;
     --quaternary-color:rgba(248, 200, 141, 1) ;
 
     --text-color-tertiary:var(--secondary-color);
@@ -39,18 +39,33 @@ html[data-theme='orange'] {
 html[data-theme='dark'] {
     --primary-color: rgba(255, 255, 255, 1) ;
     --secondary-color: rgba(0, 0, 0, 1) ;
-    --tertiary-color:rgba(0, 0, 0, 1) ;
+    --tertiary-color:rgba(55, 63, 65, 1) ;
     --quaternary-color:rgba(65, 61, 57, 1);
 
     --text-color-tertiary:var(--secondary-color);
 }
 
+/** 
+
+**/
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color-primary);
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: var(--quaternary-color);
+    color: var(--text-color-secondary);
+}
 
 .bg-theme {
     background-color: var(--secondary-color);
 }
 .bg-theme-secondary {
     background-color: var(--quaternary-color);
+}
+.bg-theme-tertiary {
+    background-color: var(--tertiary-color);
 }
 
 .text-theme {
