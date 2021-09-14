@@ -149,6 +149,9 @@ body {
 .bg-theme-tertiary {
     background-color: var(--tertiary-color);
 }
+.bg-theme-quaternary {
+    background-color: var(--quaternary-color);
+}
 
 .text-theme {
     color: var(--text-color-primary);
