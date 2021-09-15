@@ -4,3 +4,4 @@ This is the front end of Bleepy. We use HTML, CSS, Bootstrap, and Javascript/Jqu
 Additional Plugins
 - jQuery Validation
 - AdminLTE
+- ChartJS

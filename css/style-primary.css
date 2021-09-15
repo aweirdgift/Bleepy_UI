@@ -176,6 +176,17 @@ body {
     border-color: var(--secondary-color); /*set the color you want here*/
 }
 
+.btn-theme-secondary {
+    color: var(--text-color-secondary);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color); /*set the color you want here*/
+}
+.btn-theme-secondary:hover, .btn-theme-secondary:focus, .btn-theme-secondary:active, .btn-theme-secondary.active, .open>.dropdown-toggle.btn-theme-secondary {
+    color: var(--text-color-secondary);
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);  /*set the color you want here*/
+}
+
 .navbar-theme .navbar-brand {
     color: var(--text-color-secondary);
 }
