@@ -170,7 +170,8 @@ body {
     background-color: var(--primary-color);
     border-color: var(--secondary-color); /*set the color you want here*/
 }
-.btn-theme:hover, .btn-theme:focus, .btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active, 
+.btn-theme.active, .open>.dropdown-toggle.btn-theme {
     color: var(--text-color-secondary);
     background-color: var(--secondary-color);
     border-color: var(--secondary-color); /*set the color you want here*/
@@ -187,8 +188,13 @@ body {
     border-color: var(--secondary-color);  /*set the color you want here*/
 }
 
-.navbar-theme .navbar-brand {
+.navbar-theme .navbar-brand, .nav-pills .nav-link, .nav-header  {
     color: var(--text-color-secondary);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link, .nav-pills .nav-item .nav-link:hover {
+    color: var(--text-color-secondary);
+    background-color: var(--primary-color);
 }
 
 .navbar-theme .navbar-toggler {

@@ -16,11 +16,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style-primary.css">
-
-
-    
-
-
 </head>
 <body>
     <!-- Preloader -->
@@ -52,26 +47,119 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="#">Audio Library</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
+                <!-- Navbar Search -->
                 <li class="nav-item">
-                <a class="nav-link" href="signup.html">Sign up</a>
+                    <a class="nav-link" data-widget="navbar-search" data-target="#navbar-search1" href="#" role="button">
+                      <i class="fa fa-search"></i>
+                      <span class=" d-md-none"> Search</span>
+                    </a>
+                    <div class="navbar-search-block" id="navbar-search1">
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input class="form-control form-control-navbar bg-light" type="search" placeholder="Search" aria-label="Search">
+                          <div class="input-group-append">
+                            <button class="btn btn-theme-secondary" type="submit">
+                              <i class="fa fa-search"></i>
+                            </button>
+                            <button class="btn btn-theme-secondary" type="button" data-widget="navbar-search">
+                              <i class="fa fa-times"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                 </li>
+
+                
+                <!-- Notifications Dropdown Menu -->
+                <section>
+                    <li class="nav-item dropdown d-none d-md-block ">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                          <i class="fa fa-bell"></i>
+                          <span class="badge badge-warning navbar-badge">15</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right ">
+                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-md-none">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                          <i class="fa fa-bell"></i>
+                          <span class="badge badge-warning navbar-badge">15</span>
+                          <span class=" d-md-none"> Notifications</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>
+                </section>
+
+
                 <li class="nav-item">
-                <a class="btn btn-outline-light bg-theme-secondary text-theme-secondary d-md-block d-none" href="signin.html">Sign in</a>
-                <a class="nav-link d-md-none" href="signin.html">Sign in</a>
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                      <i class="fa fa-expand"></i>
+                      <span class=" d-md-none"> Expand</span>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="" data-toggle="dropdown">
+                        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                        <span class=" d-md-none"> Settings</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="settings.html">Settings</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link " href="#" id="" data-toggle="dropdown">
                         <i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i>
+                        <span class=" d-md-none"> Menu</span>
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="dashboard.html">Dashboard</a>
                         <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">Help</a>
-                        <a class="dropdown-item" href="settings.html">Settings</a>
+                        <a class="dropdown-item" href="#">Videos</a>
+                        <a class="dropdown-item" href="#">Bleep Videos</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Log out</a>
                     </div>
@@ -117,24 +205,61 @@
                     </div>
                 </div>
                 <!-- /.widget-user -->
+
+                <!-- Card Nav -->
+                <div class="card bg-theme-secondary d-none d-md-block">
+                    <div class="card-body">
+                        <!-- Sidebar Menu -->
+                        <nav class="">
+                            <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+                                with font-awesome or any other icon font library -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        <i class="nav-icon fa fa-tachometer"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-video-camera"></i>
+                                        <p>
+                                            My Videos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-soundcloud"></i>
+                                        <p>
+                                            My Bleeped Videos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-music"></i>
+                                        <p>
+                                            Audio library
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- /.sidebar-menu -->
+                    </div>
+                </div>
             </div>
             <div class="col-md-9">
                 <!-- Bleep new video -->
-                <div class="jumbotron shadow bg-theme-secondary text-theme-secondary">
-                    
-                    <div class="row">
-                        <div class="col-md-6 text-right d-none d-md-block">
-                            <img src="../src/logo-white.png" alt="" class="w-50">
-                        </div>
-                        <div class="col-md-6 text-md-left text-center">
-                            <h2>Bleep New Video</h2>
-                            <button class="btn btn-theme-secondary border"> Upload Video </button> 
-                            <button class="btn btn-theme-secondary border"> Choose Video </button>
-                        </div>
-                    </div>
-                    
+                <div class="jumbotron shadow bg-theme-secondary text-theme-secondary text-center">
+                        <h2>Bleep New Video</h2> <br>
+                        <button class="btn btn-theme-secondary border"> Upload Video </button> 
+                        <button class="btn btn-theme-secondary border"> Choose Video </button>
                 </div>
-                
+
                 <div class="row jumbotron bg-theme-quaternary text-theme shadow p-4 mb-4">
                     <div class="col-md-6"> 
                         <h1 class=" font-weight-light">Dashboard</h1>
@@ -210,9 +335,7 @@
                         </div>
                     </div>
                 </div>
-
                 
-
                 <!---->
                 <div class="row">
                     <div class="col-12">
@@ -544,9 +667,9 @@
                             <!-- /.timeline-label -->
                             <!-- timeline item -->
                             <div>
-                            <i class="fas fa-envelope bg-blue"></i>
+                            <i class="fa fa-envelope bg-blue"></i>
                             <div class="timeline-item">
-                                <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                                <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
                                 <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
             
                                 <div class="timeline-body">
@@ -564,18 +687,18 @@
                             <!-- END timeline item -->
                             <!-- timeline item -->
                             <div>
-                            <i class="fas fa-user bg-green"></i>
+                            <i class="fa fa-user bg-green"></i>
                             <div class="timeline-item">
-                                <span class="time"><i class="fas fa-clock"></i> 5 mins ago</span>
+                                <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
                                 <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
                             </div>
                             </div>
                             <!-- END timeline item -->
                             <!-- timeline item -->
                             <div>
-                            <i class="fas fa-comments bg-yellow"></i>
+                            <i class="fa fa-comments bg-yellow"></i>
                             <div class="timeline-item">
-                                <span class="time"><i class="fas fa-clock"></i> 27 mins ago</span>
+                                <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
                                 <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
                                 <div class="timeline-body">
                                 Take me to your leader!
@@ -597,7 +720,7 @@
                             <div>
                             <i class="fa fa-camera bg-purple"></i>
                             <div class="timeline-item">
-                                <span class="time"><i class="fas fa-clock"></i> 2 days ago</span>
+                                <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
                                 <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
                                 <div class="timeline-body">
                                 <img src="https://placehold.it/150x100" alt="...">
@@ -611,10 +734,10 @@
                             <!-- END timeline item -->
                             <!-- timeline item -->
                             <div>
-                            <i class="fas fa-video bg-maroon"></i>
+                            <i class="fa fa-video bg-maroon"></i>
             
                             <div class="timeline-item">
-                                <span class="time"><i class="fas fa-clock"></i> 5 days ago</span>
+                                <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
             
                                 <h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
             
@@ -630,7 +753,7 @@
                             </div>
                             <!-- END timeline item -->
                             <div>
-                            <i class="fas fa-clock bg-gray"></i>
+                            <i class="fa fa-clock-o bg-gray"></i>
                             </div>
                         </div>
                         </div>

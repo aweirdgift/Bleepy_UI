@@ -1040,8 +1040,8 @@
   var SELECTOR_DATA_WIDGET$2 = '[data-widget="fullscreen"]';
   var SELECTOR_ICON = SELECTOR_DATA_WIDGET$2 + " i";
   var Default$8 = {
-    minimizeIcon: 'fa-compress-arrows-alt',
-    maximizeIcon: 'fa-expand-arrows-alt'
+    minimizeIcon: 'fa-compress',
+    maximizeIcon: 'fa-expand'
   };
   /**
    * Class Definition
