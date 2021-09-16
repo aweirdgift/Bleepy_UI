@@ -206,6 +206,12 @@ body {
     color: var(--text-color-secondary);
 }
 
+.navbar-theme .dropdown .dropdown-menu{
+    max-height: 250px;/* you can change as you need it */
+    overflow-x:hidden; 
+    overflow-y:auto; 
+ }
+
 .time-label .bg-theme-secondary{
     background-color: var(--secondary-color) !important;
 }
