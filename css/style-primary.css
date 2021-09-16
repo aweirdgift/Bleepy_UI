@@ -223,7 +223,7 @@ body {
     border-top: 3px solid var(--secondary-color);
 }
 
-.card-title {
+.card-deck .card-title {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: .75rem;
