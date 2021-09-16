@@ -215,3 +215,10 @@ body {
 .time-label .bg-theme-secondary{
     background-color: var(--secondary-color) !important;
 }
+
+.card-theme.card-outline {
+    border-top: 3px solid var(--primary-color);
+}
+.card-theme-secondary.card-outline {
+    border-top: 3px solid var(--secondary-color);
+}
