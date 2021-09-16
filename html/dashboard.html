@@ -41,13 +41,19 @@
                 <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#">Audio Library</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Audio Library</a>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    About
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                    <a class="dropdown-item" href="#">Terms and Conditions</a>
+                    <a class="dropdown-item" href="#">Privacy and Security Policies</a>
+                    </div>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -215,7 +221,7 @@
                             <!-- Add icons to the links using the .nav-icon class
                                 with font-awesome or any other icon font library -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <a href="dashboard.html" class="nav-link active">
                                         <i class="nav-icon fa fa-tachometer"></i>
                                         <p>
                                             Dashboard
@@ -660,100 +666,149 @@
                         <div class="col-md-12">
                         <!-- The time line -->
                         <div class="timeline">
-                            <!-- timeline time label -->
+                            <!-- TIME LINE LABEL -->
                             <div class="time-label">
-                            <span class="bg-red">10 Feb. 2014</span>
+                                <span class="bg-theme-secondary text-theme-secondary">September 15 2021</span>
                             </div>
-                            <!-- /.timeline-label -->
-                            <!-- timeline item -->
                             <div>
-                            <i class="fa fa-envelope bg-blue"></i>
-                            <div class="timeline-item">
-                                <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-                                <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
-            
-                                <div class="timeline-body">
-                                Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-                                weebly ning heekya handango imeem plugg dopplr jibjab, movity
-                                jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-                                quora plaxo ideeli hulu weebly balihoo...
-                                </div>
-                                <div class="timeline-footer">
-                                <a class="btn btn-primary btn-sm">Read more</a>
-                                <a class="btn btn-danger btn-sm">Delete</a>
+                                <i class="fa fa-user bg-green"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 30 mins</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> updated your profile</h3>
+                                    <div class="timeline-body">
+                                        Profile has been updated
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View Profile</button>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                            <!-- END timeline item -->
-                            <!-- timeline item -->
-                            <div>
-                            <i class="fa fa-user bg-green"></i>
-                            <div class="timeline-item">
-                                <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-                                <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
-                            </div>
-                            </div>
-                            <!-- END timeline item -->
-                            <!-- timeline item -->
-                            <div>
-                            <i class="fa fa-comments bg-yellow"></i>
-                            <div class="timeline-item">
-                                <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
-                                <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
-                                <div class="timeline-body">
-                                Take me to your leader!
-                                Switzerland is small and neutral!
-                                We are more like Germany, ambitious and misunderstood!
-                                </div>
-                                <div class="timeline-footer">
-                                <a class="btn btn-warning btn-sm">View comment</a>
-                                </div>
-                            </div>
-                            </div>
-                            <!-- END timeline item -->
-                            <!-- timeline time label -->
+                            <!-- TIME LINE LABEL -->
                             <div class="time-label">
-                            <span class="bg-green">3 Jan. 2014</span>
+                                <span class="bg-theme-secondary text-theme-secondary">September 13 2021</span>
                             </div>
-                            <!-- /.timeline-label -->
-                            <!-- timeline item -->
                             <div>
-                            <i class="fa fa-camera bg-purple"></i>
-                            <div class="timeline-item">
-                                <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
-                                <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
-                                <div class="timeline-body">
-                                <img src="https://placehold.it/150x100" alt="...">
-                                <img src="https://placehold.it/150x100" alt="...">
-                                <img src="https://placehold.it/150x100" alt="...">
-                                <img src="https://placehold.it/150x100" alt="...">
-                                <img src="https://placehold.it/150x100" alt="...">
+                                <i class="fa fa-download bg-maroon"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> download a bleeped video</h3>
+                                    <div class="timeline-body">
+                                        mygameplaylol.mp4
+                                        Bleep sound: Buzzer
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View </button>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                            <!-- END timeline item -->
-                            <!-- timeline item -->
                             <div>
-                            <i class="fa fa-video bg-maroon"></i>
-            
-                            <div class="timeline-item">
-                                <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
-            
-                                <h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
-            
-                                <div class="timeline-body">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tMWkeBIohBs" allowfullscreen></iframe>
-                                </div>
-                                </div>
-                                <div class="timeline-footer">
-                                <a href="#" class="btn btn-sm bg-maroon">See comments</a>
+                                <i class="fa fa-soundcloud bg-purple"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> bleeped a video</h3>
+                                    <div class="timeline-body">
+                                        mygameplaylol.mp4 <br>
+                                        Bleep Sound: Buzzer
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View Full Report</button>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                            <!-- END timeline item -->
                             <div>
-                            <i class="fa fa-clock-o bg-gray"></i>
+                                <i class="fa fa-upload bg-maroon"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> uploaded new video</h3>
+                                    <div class="timeline-body">
+                                        mygameplaylol.mp4
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TIME LINE LABEL -->
+                            <div class="time-label">
+                                <span class="bg-theme-secondary text-theme-secondary">September 12 2021</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-key bg-green"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 3 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> change your password</h3>
+                                    <div class="timeline-body">
+                                        Your password has been updated
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-soundcloud bg-purple"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 3 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> bleeped a video</h3>
+                                    <div class="timeline-body">
+                                        1V1 IN OVERWATCH- WINNER GETS MACAIYLA.mkv <br>
+                                        Bleep Sound: Buzzer
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View Full Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TIME LINE LABEL -->
+                            <div class="time-label">
+                                <span class="bg-theme-secondary text-theme-secondary">September 10 2021</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-camera bg-green"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> change your profile photo</h3>
+                                    <div class="timeline-body">
+                                        <img src="../src/mark-decile-WA84FtTi7NU-unsplash.jpg" alt="" class="w-75">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-soundcloud bg-purple"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> bleeped a video</h3>
+                                    <div class="timeline-body">
+                                        1V1 IN OVERWATCH- WINNER GETS MACAIYLA.mkv <br>
+                                        Bleep Sound: Dolphin
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View Full Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-upload bg-maroon"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> uploaded new video</h3>
+                                    <div class="timeline-body">
+                                        1V1 IN OVERWATCH- WINNER GETS MACAIYLA.mkv
+                                    </div>
+                                    <div class="timeline-footer">
+                                        <button class="btn btn-theme"> View </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-user bg-green"></i>
+                                <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+                                    <h3 class="timeline-header"><a href="#">You</a> joined Bleepy</h3>
+                                    <div class="timeline-body">
+                                        <h3 class=" font-weight-light"> Welcome to Bleepy!</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-clock-o bg-gray"></i>
                             </div>
                         </div>
                         </div>
