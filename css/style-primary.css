@@ -149,6 +149,9 @@ body {
 .bg-theme-tertiary {
     background-color: var(--tertiary-color);
 }
+.bg-theme-quaternary {
+    background-color: var(--quaternary-color);
+}
 
 .text-theme {
     color: var(--text-color-primary);
@@ -167,14 +170,31 @@ body {
     background-color: var(--primary-color);
     border-color: var(--secondary-color); /*set the color you want here*/
 }
-.btn-theme:hover, .btn-theme:focus, .btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active, 
+.btn-theme.active, .open>.dropdown-toggle.btn-theme {
     color: var(--text-color-secondary);
     background-color: var(--secondary-color);
     border-color: var(--secondary-color); /*set the color you want here*/
 }
 
-.navbar-theme .navbar-brand {
+.btn-theme-secondary {
     color: var(--text-color-secondary);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color); /*set the color you want here*/
+}
+.btn-theme-secondary:hover, .btn-theme-secondary:focus, .btn-theme-secondary:active, .btn-theme-secondary.active, .open>.dropdown-toggle.btn-theme-secondary {
+    color: var(--text-color-secondary);
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);  /*set the color you want here*/
+}
+
+.navbar-theme .navbar-brand, .nav-pills .nav-link, .nav-header  {
+    color: var(--text-color-secondary);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link, .nav-pills .nav-item .nav-link:hover {
+    color: var(--text-color-secondary);
+    background-color: var(--primary-color);
 }
 
 .navbar-theme .navbar-toggler {
@@ -184,4 +204,27 @@ body {
 
 .navbar-theme .navbar-nav .nav-link {
     color: var(--text-color-secondary);
+}
+
+.navbar-theme .dropdown .dropdown-menu{
+    max-height: 250px;/* you can change as you need it */
+    overflow-x:hidden; 
+    overflow-y:auto; 
+ }
+
+.time-label .bg-theme-secondary{
+    background-color: var(--secondary-color) !important;
+}
+
+.card-theme.card-outline {
+    border-top: 3px solid var(--primary-color);
+}
+.card-theme-secondary.card-outline {
+    border-top: 3px solid var(--secondary-color);
+}
+
+.card-deck .card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .75rem;
 }

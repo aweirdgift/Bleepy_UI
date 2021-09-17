@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bleepy</title>
 
+    <!-- Bootstrap 4.5.2 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome 4.7 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Theme style | AdminLTE 3 -->
+    <link rel="stylesheet" href="../plugins/adminlte/adminlte.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style-primary.css">
 
+
     
+
+
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center bg-theme">
+        <img class="animation__shake w-25" src="../src/logo-white.png" alt="Bleepy Logo" >
+    </div>
     
     <!--NAV BAR-->
     <nav class="navbar navbar-expand-md navbar-dark bg-theme navbar-theme sticky-top">
@@ -32,13 +45,19 @@
                 <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#">Bleep Sounds</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    About
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                    <a class="dropdown-item" href="#">Terms and Conditions</a>
+                    <a class="dropdown-item" href="#">Privacy and Security Policies</a>
+                    </div>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -49,15 +68,26 @@
                 <a class="btn btn-outline-light bg-theme-secondary text-theme-secondary d-md-block d-none" href="signin.html">Sign in</a>
                 <a class="nav-link d-md-none" href="signin.html">Sign in</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link " href="#" id="" data-toggle="dropdown">
-                        <i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i>
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" data-target="#navbar-search1" href="#" role="button">
+                      <i class="fa fa-search"></i>
+                      <span class=" d-md-none"> Search</span>
                     </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Help</a>
-                      <a class="dropdown-item" href="settings.html">Settings</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Log out</a>
+                    <div class="navbar-search-block" id="navbar-search1">
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input class="form-control form-control-navbar bg-light" type="search" placeholder="Search" aria-label="Search">
+                          <div class="input-group-append">
+                            <button class="btn btn-theme-secondary" type="submit">
+                              <i class="fa fa-search"></i>
+                            </button>
+                            <button class="btn btn-theme-secondary" type="button" data-widget="navbar-search">
+                              <i class="fa fa-times"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                 </li>
             </ul>
@@ -66,7 +96,7 @@
     </nav>
 
     <section style="min-height: 500px;">
-
+        
     </section>
 
     <footer class="bg-theme text-theme-secondary">
@@ -92,9 +122,21 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap 4 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery Validation -->
+    <script src="../plugins/jqueryvalidation/jquery.validate.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../plugins/adminlte/adminlte.min.js"></script>
+
+    <!-- Custom js -->
     <script src="../js/themes.js"></script>
 </body>
 </html>
