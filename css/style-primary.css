@@ -228,3 +228,9 @@ body {
     font-weight: 500;
     margin-bottom: .75rem;
 }
+
+.card-header a,.card-header a:hover {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    background-color: transparent;
+}
