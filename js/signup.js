@@ -17,13 +17,11 @@ $("#signupform").validate({
         fname:{
             required: true,
             minlength: 2,
-            nowhitespace: true,
             validname: true
         },
         lname:{
             required: true,
             minlength: 2,
-            nowhitespace: true,
             validname: true
         },
         email:{
