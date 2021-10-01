@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="primary">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleepy</title>
+
+    <!-- Bootstrap 4.5.2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Theme style | AdminLTE 3 -->
+    <link rel="stylesheet" href="../plugins/adminlte/adminlte.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style-primary.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center bg-theme">
+        <img class="animation__shake w-25" src="../src/logo-white.png" alt="Bleepy Logo" >
+    </div>
+    
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-theme navbar-theme sticky-top">
+        <div class=" container-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"> <img src="../src/logo-white.png" alt="" class="" width="140px"></a>
+        
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bleep Sounds</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    About
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                    <a class="dropdown-item" href="#">Terms and Conditions</a>
+                    <a class="dropdown-item" href="#">Privacy and Security Policies</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" data-target="#navbar-search1" href="#" role="button">
+                      <i class="fa fa-search"></i>
+                      <span class=" d-md-none"> Search</span>
+                    </a>
+                    <div class="navbar-search-block" id="navbar-search1">
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input class="form-control form-control-navbar bg-light" type="search" placeholder="Search" aria-label="Search">
+                          <div class="input-group-append">
+                            <button class="btn btn-theme-secondary" type="submit">
+                              <i class="fa fa-search"></i>
+                            </button>
+                            <button class="btn btn-theme-secondary" type="button" data-widget="navbar-search">
+                              <i class="fa fa-times"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </li>
+
+                
+                <!-- Notifications Dropdown Menu -->
+                <section>
+                    <li class="nav-item dropdown d-none d-md-block ">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                          <i class="fa fa-bell"></i>
+                          <span class="badge badge-warning navbar-badge">15</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right ">
+                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-md-none">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                          <i class="fa fa-bell"></i>
+                          <span class="badge badge-warning navbar-badge">15</span>
+                          <span class=" d-md-none"> Notifications</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li>
+                </section>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                      <i class="fa fa-expand"></i>
+                      <span class=" d-md-none"> Expand</span>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="" data-toggle="dropdown">
+                        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                        <span class=" d-md-none"> Settings</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="settings.html">Settings</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="" data-toggle="dropdown">
+                        <i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i>
+                        <span class=" d-md-none"> Menu</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Videos</a>
+                        <a class="dropdown-item" href="#">Bleep Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                        
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="min-height: 500px;">
+        <div class="row my-3 container-fluid">
+            <div class="col-md-3">
+                <!-- Widget: user widget style 1 -->
+                <div class="card card-widget widget-user shadow">
+                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                    <div class="widget-user-header bg-theme-secondary text-theme-secondary">
+                    <h3 class="widget-user-username">Joe Doe</h3>
+                    <h5 class="widget-user-desc">YouTube Streamer</h5>
+                    </div>
+                    <div class="widget-user-image">
+                    <img class="img-circle elevation-2" src="../src/mark-decile-WA84FtTi7NU-unsplash.jpg" alt="User Avatar">
+                    </div>
+                    <div class="card-footer">
+                    <div class="row">
+                        <div class="col-sm-6 border-right">
+                        <div class="description-block">
+                            <h5 class="description-header">3,200</h5>
+                            <span class="description-text">Videos</span>
+                        </div>
+                        <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6 border-right">
+                        <div class="description-block">
+                            <h5 class="description-header">13,000</h5>
+                            <span class="description-text">Bleeps</span>
+                        </div>
+                        <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                    </div>
+                </div>
+                <!-- /.widget-user -->
+
+                <!-- Card Nav -->
+                <div class="card bg-theme-secondary d-none d-md-block">
+                    <div class="card-body">
+                        <!-- Sidebar Menu -->
+                        <nav class="">
+                            <ul class="nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+                                with font-awesome or any other icon font library -->
+                                <li class="nav-item">
+                                    <a href="dashboard.html" class="nav-link active">
+                                        <i class="nav-icon fa fa-tachometer"></i>
+                                        <p>
+                                            Dashboard
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-user"></i>
+                                        <p>
+                                            Profile
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-video-camera"></i>
+                                        <p>
+                                            My Videos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-soundcloud"></i>
+                                        <p>
+                                            My Bleeped Videos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fa fa-music"></i>
+                                        <p>
+                                            Bleep Sounds
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- /.sidebar-menu -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <section>
+                    <!-- Input code here -->
+                    <div class=" jumbotron bg-white shadow">
+                        <h1 class=" font-weight-light"> Profile </h1>
+                        <hr>
+                        <div class="row ">
+                            <div class="col-md-6 mb-3">
+                                <div class="border border-success rounded text-center">
+                                    <img src="../src/mark-decile-WA84FtTi7NU-unsplash.jpg" class="rounded mt-3 w-75 img-thumbnail"  alt="Cinque Terre">
+                                    <br>
+                                    <button class="btn btn-theme-secondary my-3" data-toggle="modal" data-target="#changephotomodal"> Change Photo </button>
+                                </div>   
+                            </div>
+                            <div class="col-md-6">
+                                <label for="fname">First Name:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" name="viewfname" id="viewfname" value="John" disabled>
+                                    <div class="input-group-append">
+                                    <button class="btn btn-theme-secondary" type="button" id="editfname" data-toggle="modal" data-target="#changefnamemodal">Change</button>
+                                    </div>
+                                </div>
+
+                                <label for="lname">Last Name:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" name="viewlname" id="viewlname" value="Doe" disabled>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-theme-secondary" type="button" id="editlname" data-toggle="modal" data-target="#changelnamemodal">Change</button>
+                                    </div>
+                                </div>
+
+                                <label for="email">Email Address:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" name="viewemail" id="viewemail" value="johndoe@gmail.com"  disabled>
+                                    <div class="input-group-append">
+                                    <button class="btn btn-theme-secondary" type="button" id="editemail" data-toggle="modal" data-target="#changeemailmodal">Change</button>
+                                    </div>
+                                </div>
+
+                                <p>Password:
+                                    <button class="btn btn-theme-secondary" type="button" id="editpwd" data-toggle="modal" data-target="#changepwdmodal">Change Password</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modals -->
+                    <div>
+                        <!-- The Modal  Change photo-->
+                        <div class="modal fade" id="changephotomodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title">Change Photo</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="" method="post" id="updatephotoform">
+                                        <label for="uploadfilesize">Maximum file size allowed: 5MB: <span class="invalid text-danger">*</span></label>
+                                        <br>
+                                        <label for="updatephoto">Photo: <span class="invalid text-danger">*</span></label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="updatephoto" name="updatephoto" accept="image/png, image/gif, image/jpeg">
+                                            <label class="custom-file-label" for="">Choose file</label>
+                                        </div>
+                                        <input type="hidden" name="uploadfilesize" id="uploadfilesize" value="">
+                                        <input type="hidden" name="maxfilesize" id="maxfilesize" value="5"> <!-- In mb -->
+
+                                        <button type="submit" class="btn btn-theme-secondary mt-3">Update</button>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- The Modal Fname-->
+                        <div class="modal fade" id="changefnamemodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title">Update First Name</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="" method="post" id="updatefnameform">
+                                        <div class="form-group">
+                                            <label for="fname">First Name: <span class="invalid text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="Enter first name" id="fname" name="fname" value="John">
+                                        </div>
+                                        <button type="submit" class="btn btn-theme-secondary">Update</button>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- The Modal Lname-->
+                        <div class="modal fade" id="changelnamemodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title">Update Last Name</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="" method="post" id="updatelnameform">
+                                        <div class="form-group">
+                                            <label for="lname">Last Name: <span class="invalid text-danger">*</span></label>
+                                            <input type="text" class="form-control" placeholder="Enter last name" id="lname" name="lname" value="Doe">
+                                        </div>
+                                        <button type="submit" class="btn btn-theme-secondary">Update</button>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- The Modal Email-->
+                        <div class="modal fade" id="changeemailmodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title">Update Email</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="" method="post" id="updateemailform">
+                                        <div class="form-group">
+                                            <label for="email">Email: <span class="invalid text-danger">*</span></label>
+                                            <input type="email" class="form-control" placeholder="Enter email" id="email" name="email" value="johndoe@gmail.com">
+                                        </div>
+                                        <hr>
+                                        <p>
+                                            Enter your password to validate your request
+                                        </p>
+                                        <div class="form-group">
+                                            <label for="pwd">Password: <span class="invalid text-danger">*</span></label> 
+                                            <div class="input-group mb-3 ">
+                                                <input type="password" class="form-control " placeholder="Enter your password" id="pwd" name="pwd">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-theme" type="button" id="showpwd"><i class="fa fa-eye-slash" aria-hidden="true" id="eyepwd"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-theme-secondary">Update</button>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- The Modal Password-->
+                        <div class="modal fade" id="changepwdmodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title">Update Password</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="" method="post" id="updatepwdform">
+                                        <div class="form-group">
+                                            <label for="oldpwd">Old Password: <span class="invalid text-danger">*</span></label> 
+                                            <div class="input-group mb-3 ">
+                                                <input type="password" class="form-control " placeholder="Enter your old password" id="oldpwd" name="oldpwd">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-theme" type="button" id="showoldpwd"><i class="fa fa-eye-slash" aria-hidden="true" id="eyeoldpwd"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newpwd">New Password: <span class="invalid text-danger">*</span></label> 
+                                            <div class="input-group mb-3 ">
+                                                <input type="password" class="form-control " placeholder="Enter your desired new password" id="newpwd" name="newpwd">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-theme" type="button" id="shownewpwd"><i class="fa fa-eye-slash" aria-hidden="true" id="eyenewpwd"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-light m-2 p-4 shadow" id="pwdMessage" >
+                                            <p>
+                                                <b>Password must contain the following: </b> <br>
+                                                <span class="text-danger" id="smallpwd"><i class="fa fa-times" aria-hidden="true" id="smallicon"></i>    A smallcase letter</span> <br>
+                                                <span class="text-danger" id="upperpwd"><i class="fa fa-times" aria-hidden="true" id="uppericon"></i>    A capital (uppercase) letter</span> <br>
+                                                <span class="text-danger" id="numberpwd"><i class="fa fa-times" aria-hidden="true" id="numbericon"></i>    A number</span> <br>
+                                                <span class="text-danger" id="minpwd"><i class="fa fa-times" aria-hidden="true" id="minicon"></i>    Minimum 8 characters</span> <br>
+                                            </p>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="confirmpwd">Confirm Password: <span class="invalid text-danger">*</span></label> 
+                                            <div class="input-group mb-3 ">
+                                                <input type="password" class="form-control " placeholder="Re-enter your desired new password" id="confirmpwd" name="confirmpwd">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-theme" type="button" id="showconfirmpwd"><i class="fa fa-eye-slash" aria-hidden="true" id="eyeconfirmpwd"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-theme-secondary">Update</button>
+                                    </form>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-theme text-theme-secondary">
+        <div class="container py-5">
+            <div class="row container">
+                <div class="col-md-4 mt-5">
+                    <h1>Contact</h1>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Calamba City, Laguna <br>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:bleepy@gmail.com" class="text-theme-secondary">Gmail: bleepy@gmail.com</a><br>
+                    <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+639487171889" class="text-theme-secondary">0948-717-1889</a>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <h1>Follow Us</h1>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i> <a href="" class="text-theme-secondary">Bleepy.facebook.com</a><br>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="" class="text-theme-secondary">Bleepymo</a><br>
+                    <i class="fa fa-instagram" aria-hidden="true"></i> <a href="" class="text-theme-secondary">BleepyUs</a>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <h1>About Us</h1>
+                    <a href="" class="text-theme-secondary">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery Validation -->
+    <script src="../plugins/jqueryvalidation/jquery.validate.js"></script>
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../plugins/adminlte/adminlte.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../js/themes.js"></script>
+    <script src="../js/validation_hasNumber.js"></script>
+    <script src="../js/validation_hasSmall.js"></script>
+    <script src="../js/validation_hasUpper.js"></script>
+    <script src="../js/validation_nowhitespace.js"></script>
+    <script src="../js/validation_validname.js"></script>
+    <script src="../js/showpwd.js"></script>
+    <script src="../js/pwdmessage.js"></script>
+    <script src="../js/profile.js"></script>
+
+
+</body>
+</html>
