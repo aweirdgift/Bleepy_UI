@@ -641,7 +641,6 @@
                     </div>
                     <div class="col-lg-5">
                         <section>
-                            <!-- PIE CHART -->
                             <div class="card shadow">
                                 <div class="card-header bg-theme-secondary text-theme-secondary">
                                 <h3 class="card-title">My Most Frequent Profanities</h3>
@@ -887,7 +886,7 @@
             datasets: [
               {
                 data: [5,13,6,3,2,1],
-                backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                backgroundColor : ['#f94144', '#f3722c', '#f8961e', '#f9844a', '#f9c74f', '#90be6d',"#43aa8b","#4d908e","#577590","#277da1"],
               }
             ]
           }
@@ -903,10 +902,23 @@
             maintainAspectRatio : false,
             responsive : true,
           }
+          new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: pieData,
+            options: pieOptions
+          })
 
           //========================================================
-          var graphData  = {
-            labels: [
+          
+      
+          
+        })
+    </script>
+
+    <script>
+        $(function () {
+            //========================================================
+            let words = [
                 'fuck',
                 'fucking',
                 'sex',
@@ -917,36 +929,34 @@
                 'stupid',
                 'idiot',
                 'sick'
-            ],
-            datasets: [
-              {
-                data: [131,62,33,24,15,14,13,10,9,5],
-                backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6ee','#f569a5', '#00a65b', '#f39c13', '#11d0ab'],
-              }
             ]
-          }
-          new Chart(pieChartCanvas, {
-            type: 'pie',
-            data: pieData,
-            options: pieOptions
-          })
+            let occurrence = [131,62,33,24,15,14,13,10,9,5]
+            occurrence.push(0) //This will set as the min value
 
-          //---------------------
-          var pieChartCanvas = $('#mostFrequentProfanityChart').get(0).getContext('2d')
-          var pieData        = graphData;
-          var pieOptions     = {
-            maintainAspectRatio : false,
-            responsive : true,
-          }
-          //Create pie or douhnut chart
-          // You can switch between pie and douhnut using the method below.
-          new Chart(pieChartCanvas, {
-            type: 'pie',
-            data: pieData,
-            options: pieOptions
-          })
-      
-          
+            //---------------------
+            var barChartCanvas = $('#mostFrequentProfanityChart').get(0).getContext('2d')
+            //---------------------
+            var xValues = words;
+            var yValues = occurrence;
+            var barColors = ['#f94144', '#f3722c', '#f8961e', '#f9844a', '#f9c74f', '#90be6d',"#43aa8b","#4d908e","#577590","#277da1"];
+
+            new Chart(barChartCanvas, {
+            type: "horizontalBar",
+            data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+            },
+            options: {
+                legend: {display: false},
+                title: {
+                display: true,
+                text: "Profanities detected base on occurence"
+                }
+            }
+            });
         })
     </script>
 
